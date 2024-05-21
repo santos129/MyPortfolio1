@@ -5,7 +5,7 @@ import { toast } from 'react-toastify';
 import { BsFacebook, BsGithub, BsLinkedin } from "react-icons/bs";
 
 const Contact = () => {
-  const formRef = useRef(); // Rename to formRef to follow hook naming convention
+  const formRef = useRef();
 
   const sendEmail = (e) => {
     e.preventDefault();
