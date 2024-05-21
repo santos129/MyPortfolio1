@@ -5,12 +5,12 @@ import { toast } from 'react-toastify';
 import { BsFacebook, BsGithub, BsLinkedin } from "react-icons/bs";
 
 const Contact = () => {
-  const form = useRef();
+  const formRef = useRef(); // Rename to formRef to follow hook naming convention
 
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm('service_k20i5gv', 'template_dvma9dz', form.current, 'en7gjO6F4S2cTtli7')
+    emailjs.sendForm('service_k20i5gv', 'template_dvma9dz', formRef.current, 'en7gjO6F4S2cTtli7')
       .then((result) => {
         console.log(result.text);
         toast.success("Message Sent Successfully");
@@ -39,7 +39,7 @@ const Contact = () => {
         </h6>
       </div>
       <div className="contactform" id="contact">
-        <form ref={form} onSubmit={sendEmail}>
+        <form ref={formRef} onSubmit={sendEmail}>
           <label>Name</label>
           <input type="text" name="user_name" />
           <label>Email</label>
