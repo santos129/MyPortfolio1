@@ -1,0 +1,96 @@
+/* Apply basic styles to the form elements */
+.container{
+  margin-top: 50px;
+}
+.row h6{
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
+.abc{
+  background-image: linear-gradient(to top right,var(--tw-gradient-stops));
+    --tw-gradient-from: #138781;;
+    --tw-gradient-to: rgba(59,130,246,0);
+    --tw-gradient-stops: var(--tw-gradient-from),var(--tw-gradient-to);
+    --tw-gradient-to: #877713;;
+    -webkit-background-clip: text;
+    background-clip: text;
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: -.025em;
+    color: transparent;
+}
+.contactform {
+
+  width:55%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contactform label {
+  display: block;
+  margin: 10px 0 5px;
+  font-weight: bold;
+}
+
+.contactform input[type="text"],
+.contactform input[type="email"],
+.contactform textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.contactform input[type="submit"] {
+  background-color: #3b8ff3;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.contactform input[type="submit"]:hover {
+  background-color: red;
+}
+
+/* Optional: Add some responsive design */
+@media (max-width: 600px) {
+  .contactform {
+    width: 80%;
+  }
+}
+/* Dark mode styles */
+#dark .contactform {
+  background-color: #333;
+  color: white;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+  border: 1px solid #555;
+}
+
+#dark .contactform input[type="text"],
+#dark .contactform input[type="email"],
+#dark .contactform textarea {
+  background-color: #444;
+  color: white;
+  border: 1px solid #555;
+}
+
+#dark .contactform input[type="submit"] {
+  background-color: #b81616;
+  border: none;
+}
+
+#dark .contactform input[type="submit"]:hover {
+  background-color:#2E2EFF;
+}
+
+#dark .icongit{
+  color: whitesmoke;
+}
