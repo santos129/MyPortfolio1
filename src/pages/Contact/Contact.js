@@ -5,7 +5,7 @@ import "./Contact.css";
 import { toast } from 'react-toastify';
 import { BsFacebook, BsGithub, BsLinkedin } from "react-icons/bs";
 
-export const contact = () => {
+export const Contact = () => {
   const form = useRef();
 
   const sendEmail = (e) => {
@@ -57,4 +57,4 @@ export const contact = () => {
   
   );
 };
-export default contact;
+export default Contact;
